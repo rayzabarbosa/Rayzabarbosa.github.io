@@ -70,7 +70,7 @@ table, td, th{
     transition: 0.5s;
 }
 
-#acender, #escuro, #foto {
+#acender, #escuro {
     cursor: pointer;
 }
 
