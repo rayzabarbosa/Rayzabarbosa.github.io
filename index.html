@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/> 
+    <link rel = "stylesheet" href = "style.css">
+	<title>PAGINA PESSOAL</title>
+</head>
+
+<body class = "escuro">
+
+    <section class = "foto" >
+        <div><img id = "minha foto" src ="imagens/foto.jpeg" width="200" height="220"/></div>
+        <h1>Rayza Barbosa</h1>
+    </section>
+
+    <section class = "controles">
+       <div><button id = "acender"> <img id = "acender" src ="imagens/sol.png" width="50" height="50"/></button></div>
+       <div><button id = "escuro"><img id = "escuro" src ="imagens/lua.png" width="50" height="50"/></button></div>
+    </section>
+
+    <section class = "dados">
+        <h2 id = "subtitulo"> Dados</h2>
+        <br>
+        <p>
+            <p><b><img src = "imagens/flor.png" alt="imagem" width="40"/> NOME:</b> Rayza Thamires Silva Barbosa</p>
+            <p><b><img src = "imagens/flor.png" alt="imagem" width="40"/> DATA DE NASCIMENTO:</b> 08/janeiro/2003</p>
+            <p><b><img src = "imagens/flor.png" alt="imagem" width="40"/> E-MAIL:</b> rayzasilvax@gmail.com</p>
+            <a id="link" href = "https://www.linkedin.com/in/rayza-barbosa-4aba38194"><img src = "imagens/linkedin.png" alt="link" width="120"/></a>
+        </p>
+    </section>
+
+    <section class = "interesse">
+        <h2 id = "subtitulo2">Área de Interesse</h2>
+        <br>
+        <p><img src = "imagens/flor.png" alt="imagem" width="40" /> 
+            Estou à procura de uma oportunidade 
+            para o meu primeiro estágio. Quero participar ativa e
+            produtivamente na área de informática, para trabalhar com base no desenvolvimento 
+            de minhas próprias habilidades,
+            atitudes e iniciativa, a fim de novos conhecimentos.
+        </p>
+    </section>
+    
+    <section class = "qualificacoes">
+        <h2 id = "subtitulo3">Qualificações Técnicas</h2>
+        <br>
+    <table>
+        <tr>
+            <td>► Utilização da Lógica de Programação nas linguagens C, Java e HTML.</td>
+            <td>► Pacote Office – Word, Excel PowerPoint-intermediários.</td>
+        </tr>
+        
+        <tr>
+            <td>► Manipulação de Banco de Dados e SQL.</td>
+            <td>► Organização de eventos.</td>
+        </tr>
+        </table>
+     </section>
+
+     <section class = "formacao">
+        <h2 id = "subtitulo3">Formação Educacional</h2>
+        <br>
+        <p>► Ensino Fundamental completo – E.E. “Castro Alves”.</p>
+        <p>► Cursando Técnico em Informática Integrado ao Ensino Médio
+             -- IFSP-Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (SP).</p>
+     </section>
+
+     <section class = "extra">
+        <h2 id = "subtitulo4">Idiomas e Extracurriculares</h2>
+        <br>
+        <p><b>► English</b>
+           <b>Período:</b> Atualmente – particular</p>
+
+        <p><b>► Empresa:</b> Google<br>
+            <b>Nome do projeto:</b> Startup in School Edição Google Brasil <br>
+            <b>Atuação:</b> Participante<br>
+            <b>Período:</b> 05/2019</p>
+
+        <p><b>► Empresa:</b> Junior Achievement<br>
+            <b>Nome do projeto:</b> Latin Code Week – JA Brasil – American Tower – SAP
+            <b>Atuação</b>: Participante<br>
+            <b>Período:</b> 09/2019 </p>
+        </section>
+
+        <section class = "profissional">
+        <h2 id = "subtitulo5">Experiência Profissional</h2>
+        <p><b>► Empresa:</b>Instituto Federal de São Paulo - IFSP <br>
+            <b>Nome do projeto:</b> Interação da Comunidade Interna e Externa do IFSP <br>
+            <b>Objetivo:</b> Organizar eventos que aproximam os alunos do IFSP com o meio profissional, através do contato com  empresas de TI. <br>             
+            <b>Atuação:</b> Bolsista<br>
+            <b>Período: </b> 03/2019 – 12/2020</p>
+         </section>
+
+        <section class = "pessoal">
+        <h2 id = "subtitulo6 ">Informações Pessoais</h2>
+        <p><img src = "imagens/flor.png" alt="imagem" width="40"/> Possuo características que facilitam meu desenvolvimento profissional e pessoal, como proatividade e persistência. 
+            Tenho um bom relacionamento interpessoal e flexibilidade para discutir e aceitar ideias nos 
+            trabalhos em grupo, me mantendo constantemente disposta a trabalhar e crescer profissionalmente no ambiente de pressão. 
+        </p>
+        </section>
+
+        <footer>
+        <h3>Instituto Federal de São Paulo - Feito por: Rayza Barbosa -  2021</h3>
+        </footer>
+</body>
+
+<script src = "jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+    var foto = document.getElementById("minha foto");
+    foto.onmouseover = function(){
+        foto.classList.remove("efeito_foto");
+        foto.classList.add("efeito_foto_mouse");
+    }
+    
+    foto.onmouseout = function(){
+        foto.classList.remove("efeito_foto_mouse");
+        foto.classList.add("efeito_foto");
+    }
+</script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#acender").click(function(){
+            $("body").removeClass("escuro");
+            $("body").addClass("acender");
+       });
+
+       $("#escuro").click(function(){
+            $("body").removeClass("acender");
+            $("body").addClass("escuro");
+       });
+    });
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    font-size:100px;
+    color:#F78181;
+    text-shadow: 8px 8px 8px teal; 
+    font-family: cursive;
+}
+
+h2{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 40px;
+    color: #F78181;
+    position: relative;
+    text-shadow: 8px 8px 8px black;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+    color:teal;
+}
+
+button{
+    background-color: teal;
+    border-radius: 10px;
+    border:none;
+}
+
+
+div{
+    text-align: center;
+}
+
+section{
+    border: 2px solid black;
+}
+
+p{ 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: justify;
+    font-size: 25px;
+}
+
+
+table{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 25px;
+    width:100%;
+    text-align: center;
+    width: 100%;
+}
+
+table, td, th{
+    border: 3px solid;
+    border-color: teal;
+}
+
+.efeito_foto_mouse{
+    width: 220px;
+    height: 240px;
+    transition:0.5s;
+    border: 10px solid #F78181;
+}
+
+.efeito_foto{
+    width:200px;
+    height: 220px;
+    transition: 0.5s;
+}
+
+#acender, #escuro, #foto {
+    cursor: pointer;
+}
+
+.escuro{
+    background-color: #3b3939;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+.acender{
+    background-color: gainsboro;
+    color: #000000;
+    transition: 1s;
+}
